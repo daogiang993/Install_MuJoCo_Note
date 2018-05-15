@@ -14,7 +14,7 @@ sudo apt-get install libglew-dev
 6. Install mujoco_py <br />
 cd ~ <br />
 git clone https://github.com/openai/mujoco-py.git <br />
-cd mujoco_py <br />
+cd mujoco-py <br />
 pip install --no-cache-dir -e .
 
 7. Try humanoid simulation <br />
@@ -23,3 +23,6 @@ cd ~/.mujoco/mjpro150/bin <br />
 
 8. Add LD_PRELOAD to ~/.bashrc <br />
 Add "export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so:/usr/lib/nvidia-384/libGL.so" to ~/.bashrc
+
+9. Add LD_LIBRARY_PATH to ~/.bashrc <br />
+Add "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/gdao/.mujoco/mjpro150/bin:/usr/lib/nvidia-384" to ~/.bashrc
